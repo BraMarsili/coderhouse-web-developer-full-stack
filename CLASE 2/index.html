@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sobre las Paltas</title>
+</head>
+<body>
+    <h1>Fanatico de las paltas pa</h1>
+    <hr>
+
+    <table style="border: 3px solid black">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        <!-- TR es para FILA; TH es para columna -->
+        <tr>
+            <td>Paltas</td>
+            <td>Gratis</td>
+            <!-- Definimos los elementos aca -->
+        </tr>
+    </table>
+
+    <hr>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <!-- LI elemento de la lista -->
+    </ul>
+    <!-- UL es una lista no ordenada -->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+    <!-- OL es una lista ordend -->
+
+    <ol>
+        <li value="30">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <ol>
+            <li style="list-style-type:lower-alpha">Subelemento a</li>
+            <li style="list-style-type:lower-alpha">Subelemento b</li>
+            <li style="list-style-type:lower-alpha">Subelemento c</li>
+        </ol>
+    </ol>
+    <!-- Si agrego value y un numero va a empezar por el qe se le indica -->
+    <!-- Para una subulista, simplementa se lo etiqueta dentro de la lista -->
+    <!-- Con style dentro de LI podes cambiar el formato, como por ejemplo a letra -->
+    <hr>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        <hr>
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" placeholder="Ingrese su apelldo">
+        <hr>
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" id="Contraseña" placeholder="Ingrese su cotraseña">
+    </form>
+    <!-- FORM es etiqueta para recopilar información del usuario -->
+    <!-- LABEL abre un espacio para que la persona escriba -->
+    <!-- con INPUT y el FOR de LABEL cuando clickeas la palabra nombre te dirige el cursor para escribir
+    directamente; de la otra manera seleccionabas el nombre para copiar y pegar; si no entendes, borra
+    atributo de laber e input -->
+    <!-- PLACEHOLDERS es un mensaje en gris de lo que tiene que escribir dentro de la box del from -->
+    <!-- El TYPE del INPUT es para darle un formato -->
+    <!-- cuando el INPUT TYPE es PASSWORD no se va a ver lo que escribimos -->
+    <!-- Si no se aclara el type del input, por generico viene el text -->
+    <hr>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!-- Recuadro para escribir; cols y rows manejas ancho y alto -->
+    <hr>
+    <p>Vamos a hablar sobre las paltas</p>
+    <hr>
+    <a target="_blank" href="https://es.wikipedia.org/wiki/Paltas">¿Qué son las paltas?</a>
+    <hr>
+    <img src="img/Palta.png" alt="Palta">
+    <!-- IMG para adjuntar fotos y ALT es la descripción de la imagen, que solamente se ve cuando no carga
+    o alguien use un lector de pantalla -->
+    <!-- HR es para generar una linea de "separación" -->
+    <hr>
+</body>
+</html>

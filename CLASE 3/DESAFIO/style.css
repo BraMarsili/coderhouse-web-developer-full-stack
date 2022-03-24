@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#navegador {
+    background-color: rgb(54,57,57) ;
+}
+
+#navegador ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navegador ul li {
+    display: inline-block;
+    /* De esta forma mostramos el navegador con los hipervinculos horizontales */
+    font-family:   'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navegador ul li a {
+    color: white;
+    text-decoration: none;
+    /* Sacamos el subrayado de los hipervinculos */
+    padding: 10px;
+    display: block;
+}
+
+#navegador ul li a:hover {
+    background-color: black;
+}
+/* Para que le de background cuando pases el mouse por encima */
+
+#navegador ul li img {
+    width: 200px;
+    height: 50px;
+}
+
+.section2 {
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.section1 {
+    background-image: url(assets/img/Section\ 1\ fondo\ index\ 2.JPG);
+    background-size: cover;
+}
+
+.section1 div {
+    display: inline-block;
+    margin-right: 40px;
+    color: white;
+    margin: 50px;
+    left: 0 auto;
+}
+
+.section2 p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.libro {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+span {
+    position: relative;
+}
+
+span::after {
+    background-color:#2abdbb;
+    content: '';
+    position: absolute;
+    width: 1230px;
+    height: 25%;
+    bottom: -25px;
+    left: 0;
+    z-index: -1;
+}
+
+/* Subrayado con CSS (Utilizar span en lo que se quiera subrayar) */
+

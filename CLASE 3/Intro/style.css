@@ -1,0 +1,76 @@
+* {
+    font-size: 24px;
+}
+/* * TODO EL HTML CON ASTERISCO */
+
+#objetivo {
+    color: blue;
+}
+ /* Haciendo aulusion a h1... # para ID*/
+
+p.texto {
+     color: blue;
+ }
+ /* Haciendo aulison a la p... . para class */
+ /* id = #
+    class = . */   
+
+p.especial {
+    color: brown;
+}
+
+div p {
+    color: blueviolet;
+}
+
+div h2, div h3 {
+    color: aqua;
+}
+
+/* 
+.color {
+    color: brown;
+    border: 5px red outset;
+}
+ */
+.color {
+    color: brown;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: red;
+    border-width: 5px;
+}
+/* border --> Ancho, color y nombre del borde */
+
+#fondo {
+    background-color: rgba(255,0,0);
+    color: white;
+    background-image: url("fondo.jpeg");
+    background-size: 400px;
+    background-size: cover;
+    background-position: center;
+}
+/* Height es el ancho, y con el backgroun-size le decimos como acomodarlo */
+
+.margen {
+    background-color: tomato;
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 15px;
+    border: solid 5px black;
+    height: 100px;
+    width: 100px;
+}
+/* margin: top, right, bottom, left (espacios fuera del elemento)
+padding: igual (espacios dentro del elemento)*/
+
+ul {
+    color: white;
+    /*list-style-type: none;
+    padding-left: 0;*/
+    background-color: chocolate;
+}
+
+.left {
+    float: left;
+    width: 100px;
+}
