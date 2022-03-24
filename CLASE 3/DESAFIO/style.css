@@ -9,7 +9,7 @@ body {
 }
 
 #navegador {
-    background-color: rgb(54,57,57) ;
+    background-color: rgb(54,57,57);
 }
 
 #navegador ul {
@@ -39,7 +39,20 @@ body {
 
 #navegador ul li img {
     width: 200px;
-    height: 50px;
+    height: 35px;
+}
+
+.section1 {
+    background-image: url(assets/img/Section\ 1\ fondo\ index\ 2.JPG);
+    background-size: cover;
+}
+
+.section1 div {
+    display: inline-block;
+    margin-right: 40px;
+    color: white;
+    margin: 45px;
+    left: 0 auto;
 }
 
 .section2 {
@@ -54,19 +67,6 @@ body {
     margin-bottom: 50px;
     font-size: 25px;
     font-weight: bolder;
-}
-
-.section1 {
-    background-image: url(assets/img/Section\ 1\ fondo\ index\ 2.JPG);
-    background-size: cover;
-}
-
-.section1 div {
-    display: inline-block;
-    margin-right: 40px;
-    color: white;
-    margin: 50px;
-    left: 0 auto;
 }
 
 .section2 p {
@@ -87,7 +87,7 @@ span::after {
     background-color:#2abdbb;
     content: '';
     position: absolute;
-    width: 1230px;
+    width: 1125px;
     height: 25%;
     bottom: -25px;
     left: 0;
