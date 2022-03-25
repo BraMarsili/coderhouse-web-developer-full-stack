@@ -18,43 +18,37 @@
             </ul>
         </nav>
     </header>
-    <hr>
-    <section>
-        <h2>CONTACTO</h1>
+    <section class="section2">
+        <h1><span class="spantitulo">CONTACTO</span></h1>
     </section>
-    <br>
-    <section>
+    <section class="sectionForm">
+        <div>
+            <p>¿Tienes alguna duda o problema?</p>
+            <p>Completa los suientes datos:</p>
+        </div>
         <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" placeholder="Ingrese su nombre">
-            <br>
-            <label for="correo_electronico">Correo Electrónico:</label>
-            <input type="text" placeholder="Ingrese su Correo Electrónico">
-            <br>
-            <label for="problema">Eliga el problema</label>
-            <br>
-            <select name="problema" id="problema">
+            <label for="nombre">Nombre</label>
+            <input class="formInput" type="text" placeholder="Ingrese su nombre">
+            <label for="correo_electronico">Correo Electrónico</label>
+            <input  class="formInput" type="text" placeholder="Ingrese su Correo Electrónico">
+            <label for="problema">Elija el motivo</label>
+            <select name="problema">
                 <option value="facturación">Problemas con facturación</option>
-                <option value="otros">Otro</option>
+                <option value="otro">Otro</option>
             </select>
-            <br>
-            <label for="consulta">Consulta:</label>
-            <br>
-            <textarea name="consulta" id="" cols="30" rows="5" placeholder="Ingrese su consulta"></textarea>
-            <br>
-            <label for="notificación">¿Desea recibir una notificación cuando le hayan respondido?</label>
-            <br>
+            <label for="mensaje">Su mensaje</label>
+            <textarea name="mensaje" id="" cols="30" rows="5" placeholder="Ingrese su mensaje"></textarea>
+            <label for="notificación">¿Desea recibir una notificación cuando le hayamos respondido?</label>
             <div>
-                <input type="radio" name="si" value="si">
+                <input class="formOption" type="radio" name="si" value="si">
                 Si
             </div>
             <div>
-                <input type="radio" name="no" value="no">
+                <input class="formOption" type="radio" name="no" value="no">
                 No
             </div>
-            <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Reset">
+            <input class="formButtom" type="submit" value="Enviar">
+            <input class="formButtom" type="reset" value="Borrar">
         </form>
     </section>
     <section class="footer">

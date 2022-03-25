@@ -180,3 +180,47 @@ footer li {
     margin-bottom: 20px;
 }
 
+.sectionForm {
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.sectionForm div {
+    margin-bottom: 20px;
+
+}
+
+.formInput {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 200px;
+    display: block;
+}
+
+form select, textarea {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.formOption {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.formButtom {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 100px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.subtitulo
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
