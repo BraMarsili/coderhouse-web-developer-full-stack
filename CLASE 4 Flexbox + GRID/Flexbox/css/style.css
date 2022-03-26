@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hijo p {
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: aquamarine;
+    border: 1px black solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 2rem;
+}
+/* Damos estilo a las cajas */
+
+/* Aplicamos Flexbox */
+
+.contenedor {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    flex-wrap: wrap;
+    /* Flex wrap defino que los items hijos sean multilinea */
+    /* Valores posibles: wrap, nowrap, wrap-reverse */
+    /* flex-flow: row wrap es un atajo para las otras dos propiedades */
+    height: 300px;
+
+    /* justify.content te permite alinear los items hijos
+    Si flex-direction es row, lo acomoda en el eje horizontal
+    Si flex-direction es column, lo acomoda en el eje vertical */
+
+    justify-content: flex-start;
+
+    /* align-items me permite alinear los items hijos 
+    Si flex direction es row, lo acomoda en el eje vertical
+    Si flex direction es column, lo acomoda en el eje horizontal*/
+     
+    align-items: flex-start;
+
+    /* align content funciona solamente cuando estamos en multilinea (wrap) 
+    Acomodas TODOS los hijos al mismo tiempo, y no 1*/
+}
