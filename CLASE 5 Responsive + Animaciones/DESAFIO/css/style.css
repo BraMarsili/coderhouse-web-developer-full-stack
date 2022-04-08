@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: auto;
+    overflow-x: hidden;
+}
+
+.body-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header header"
+    "section1 section1"
+    "section2 section2"
+    "section3 section3"
+    "vertododiv vertododiv"
+    "footer footer";
+}
+
+.body-vendido {
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    grid-template-areas: 
+    "header header header"
+    "aside section2 section2"
+    "footer footer footer";
+    gap: 1px;
+}
+
+header {
+    grid-area: header;
+    width: auto;
+}
+
+#navegador {
+    background-color: rgb(54,57,57);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#navegador ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navegador ul li {
+    display: inline-block;
+    /* De esta forma mostramos el navegador con los hipervinculos horizontales */
+    font-family:   'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navegador ul li a {
+    color: white;
+    text-decoration: none;
+    /* Sacamos el subrayado de los hipervinculos */
+    padding: 10px;
+    display: block;
+}
+
+#navegador ul li a:hover {
+    background-color: black;
+}
+/* Para que le de background cuando pases el mouse por encima */
+
+#navegador ul li img {
+    width: 150px;
+    height: 35px;
+}
+
+.section1 {
+    background-image: url(../assets/img/Section\ 1\ fondo\ index\ 2.JPG);
+    background-size: cover;
+    text-align: center;
+    grid-area: section1;
+    width: auto;
+}
+
+.section1 div {
+    display: inline-block;
+    color: white;
+    margin: 45px;
+    left: 0 auto;
+}
+
+.section1 p {
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.section1 button {
+    cursor: pointer;
+    background-color: #2abdbb;
+    border: solid 2px white;
+    border-radius: 2px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 {
+    margin: 30px 80px 30px 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: section2;
+    width: auto;
+}
+
+.titulo {
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.section2 p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.libro {
+    display: inline-block;
+    margin-right: 29px;
+    width: 150px;
+    height: 350px;
+}
+/* No puedo hacer que todas sus posiciones sean a la misma altura */
+
+.spantitulo {
+    position: relative;
+}
+
+.spantitulo::after {
+    background-color:#2abdbb;
+    content: '';
+    position: absolute;
+    width: 1125px;
+    height: 25%;
+    bottom: -25px;
+    left: 0;
+    z-index: -1;
+}
+
+/* Subrayado con CSS (Utilizar span en lo que se quiera subrayar) */
+
+.section2 button {
+    cursor: pointer;
+    background-color: #2abdbb;
+    border: solid 2px white;
+    border-radius: 2px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 {
+    margin: 30px 80px 30px 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: section3;
+    width: auto;
+}
+
+.section3 p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.section3 button {
+    cursor: pointer;
+    background-color: #2abdbb;
+    border: solid 2px white;
+    border-radius: 2px;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertododiv {
+    text-align: center;
+    margin: 50px;
+    grid-area: vertododiv;
+    width: auto;
+}
+
+.vertodobutton {
+    display: inline-flex;
+    width: 100px;
+    height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: solid 2px #2abdbb;
+    border-radius: 2px;
+}
+
+.vertodobutton a {
+    text-decoration: none;
+    color: #2abdbb;
+}
+
+footer {
+    background-color: rgb(54,57,57);
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 200px;
+    width: auto;
+}
+
+footer h3 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+.footer-left-content {
+    display: flex;
+    float: left;
+    margin-left: 20px;
+}
+
+.footer-links {
+    display: block;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-links ul li {
+    padding: 0;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.footer-links ul li a {
+    color: white;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.footer-links ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.footer-right-content {
+    float: right;
+    margin-right: 20px;
+    display: block;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.payment-methods {
+    padding-bottom: 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.payment-methods p{
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.payment-methods img {
+    opacity: 1;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.small-print {
+    margin-top: 30px;
+}
+
+.small-print p {
+    text-align: right;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+.sectionForm {
+    margin: 50px 80px 40px 80px;
+}
+
+.sectionForm div {
+    margin-bottom: 20px;
+
+}
+
+.formInput {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 200px;
+    display: block;
+}
+
+form select, textarea {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.formOption-div {
+    width: 50px;
+    display: inline-block;
+}
+
+.formOption {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.formButtom {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 100px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.subtitulo
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.aside-vendido {
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+    padding: 0 0.5rem 0 0;
+    box-sizing: border-box;
+    margin-left: 10px;
+    grid-area: aside;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aside-vendido h2 {
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(54,57,57) ;
+}
+
+.aside-vendido-search {
+    padding: .5rem 1rem;
+    margin: .5rem;
+    background-color: rgb(54,57,57);
+    box-shadow: 0.1rem 0.1rem 0.2rem white;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+.aside-content {
+    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+.filter-menu {
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: small;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    box-shadow: inset 0 1px 1px white;
+}
+
+.palabra {
+    width: 90%;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.filter-button {
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 1.7rem;
+    border: 0;
+    margin: 0;
+    background: #2abdbb;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .6rem;
+    min-width: 14rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: none;
+    display: inline-block;
+}
+
+.vendido {
+    margin-left: 30px;
+    padding: 1px;
+}
+
+.vendido .libro {
+    display: inline-block;
+    margin-right: 35px;
+    width: 130px;
+    height: 350px;
+}
+
+.vendido .spantitulo::after {
+    width: 900px;
+}
+
+@media(max-width:480px) {
+
+    body {
+        width: auto;
+    }
+
+    header {
+        width: auto;
+    }
+
+    .body-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "vertododiv"
+        "footer";
+    }
+
+    .section1 {
+        width: auto;
+    }
+
+    .section2 {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .libro {
+        margin-right: 55px;
+    }
+
+    .body-index .spantitulo::after {
+        width: 425px;
+    }
+
+    .section3 {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .vertododiv {
+        width: auto;
+        margin: 40px 5px 40px 5px;
+    }
+
+    footer {
+        width: auto;
+        height: auto;
+    }
+
+    .footer-right-content {
+        float: left;
+        margin-left: 20px;
+    }
+
+    .body-vendido {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "section2"
+        "footer";
+        gap: 1px;
+    }
+
+    .vendido .libro {
+        margin-right: 55px;
+    }
+
+    .vendido .spantitulo::after {
+        width: 425px;
+    }
+}
+
+@media(max-width:480px) and (max-width:900px) {
+
+    body {
+        width: auto;
+    }
+
+    header {
+        width: auto;
+    }
+
+    .body-index {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "vertododiv"
+        "footer";
+    }
+
+    .section1 {
+        width: auto;
+    }
+
+    .section2 {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .libro {
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+
+    .body-index .spantitulo::after {
+        width: 792px;
+    }
+
+    .section3 {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .vertododiv {
+        width: auto;
+        margin: 40px 5px 40px 5px;
+    }
+
+    footer {
+        width: auto;
+        height: auto;
+    }
+
+    .footer-right-content {
+        float: left;
+        margin-left: 20px;
+    }
+
+
+}

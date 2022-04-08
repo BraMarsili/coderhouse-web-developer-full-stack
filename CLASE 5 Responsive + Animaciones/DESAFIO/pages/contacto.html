@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/a0d20ff9bd.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav id="navegador">
+            <ul>
+                <li><a href="../index.html"><img src="../assets/img/logo 2.png" alt="Home"></a></li>
+                <li><a href="../pages/explorar.html">Explorar</a></li>
+                <li><a href="../pages/manga.html">Manga</a></li>
+                <li><a href="../pages/lo_mas_vendido.html">Lo más vendido</a></li>
+                <li><a href="../pages/contacto.html"">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section2">
+        <h1><span class="spantitulo">CONTACTO</span></h1>
+    </section>
+    <section class="sectionForm">
+        <div>
+            <p>¿Tienes alguna duda o problema?</p>
+            <p>Completa los suientes datos:</p>
+        </div>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input class="formInput" type="text" placeholder="Ingrese su nombre">
+            <label for="correo_electronico">Correo Electrónico</label>
+            <input  class="formInput" type="text" placeholder="Ingrese su Correo Electrónico">
+            <label for="problema">Elija el motivo</label>
+            <select name="problema">
+                <option value="" label="Elija su opción">Elija su opción</option>
+                <option value="facturación">Problemas con facturación</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="mensaje">Su mensaje</label>
+            <textarea name="mensaje" id="" cols="30" rows="5" placeholder="Ingrese su mensaje"></textarea>
+            <label for="notificación">¿Desea recibir una notificación cuando le hayamos respondido?</label>
+            <br>
+            <div class="formOption-div">
+                <input class="formOption" type="radio" name="si" value="si">
+                Si
+            </div>
+            <div class="formOption-div">
+                <input class="formOption" type="radio" name="no" value="no">
+                No
+            </div>
+            <br>
+            <input class="formButtom" type="submit" value="Enviar">
+            <input class="formButtom" type="reset" value="Borrar">
+        </form>
+    </section>
+    <footer>
+        <div class="footer-left-content">
+            <section class="footer-links">
+                <h3><b>¿En qúe podemos ayudarte?</b></h3>
+                <ul>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul> 
+            </section>
+        </div>
+        <div class="footer-right-content">
+           <div class="payment-methods">
+                <p>Aceptamos los siguientes métodos de pago</p>
+                <img src="../assets/img/payments methods.png" alt="Payment Methods">
+           </div>
+           <div class="small-print">
+               <p>© 2022  Bookify</p>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>

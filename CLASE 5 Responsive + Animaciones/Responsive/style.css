@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+aside, article, .ad {
+    border: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: blue;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.main-head {
+    grid-area: header;
+}
+
+.content {
+    grid-area: contenido;
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+.side { 
+    grid-area: sidebar;
+}
+
+.ad {
+    grid-area: ad;
+}
+
+.main-fotter {
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contenido"
+    "sidebar"
+    "ad"
+    "footer";
+    border: 2px solid black;
+}
+
+p {
+    color: red;
+}
+
+/* Todo este estilo es para Mobile First ya que te manejas en una sola columna */
+
+@media(min-width:500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "sidebar contenido"
+        "ad footer";
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        border: 2cm;
+    }
+
+    p {
+        color: black;
+    }
+}
+
+/* Con @media se declara el ancho minimo a partir del cual cambiara la estrucutra y diagramación de la pagina */
+
+@media(min-width:700px) {
+    .wrapper {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav sidebar contenido"
+        "nav sidebar ad"
+        "footer footer footer";
+    }
+
+    nav ul {
+        flex-direction: column;
+        border: 2px dotted black;
+    }
+}
+
+@media(min-width:920px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header header"
+        "nav contenido contenido sidebar"
+        "nav contenido contenido ad"
+        "footer footer footer footer";
+    }
+
+    body {
+        background-color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    header {
+        color: blue;
+        font-size: 15px;
+        background-color: aquamarine;
+    }
+}

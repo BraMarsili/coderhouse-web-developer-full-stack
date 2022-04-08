@@ -31,7 +31,7 @@
     Si flex-direction es row, lo acomoda en el eje horizontal
     Si flex-direction es column, lo acomoda en el eje vertical */
 
-    justify-content: flex-start;
+    justify-content: center;
 
     /* align-items me permite alinear los items hijos 
     Si flex direction es row, lo acomoda en el eje vertical

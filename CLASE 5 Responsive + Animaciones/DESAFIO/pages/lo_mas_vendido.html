@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/a0d20ff9bd.js" crossorigin="anonymous"></script>
+    <title>Lo más vendido</title>
+</head>
+<body class="body-vendido">
+    <header>
+        <nav id="navegador">
+            <ul>
+                <li><a href="../index.html"><img src="../assets/img/logo 2.png" alt="Home"></a></li>
+                <li><a href="../pages/explorar.html">Explorar</a></li>
+                <li><a href="../pages/manga.html">Manga</a></li>
+                <li><a href="../pages/lo_mas_vendido.html">Lo más vendido</a></li>
+                <li><a href="../pages/contacto.html"">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section2 vendido">
+        <h1 class="titulo"><span class="spantitulo">Lo más vendido</span></h1>
+        <div class="libro">
+            <img src="../assets/img/Una corona de huesos dorados.jpg" alt="Una Corona de huesos dorados">
+            <p>Una corona de huesos dorados</p>
+            <p>Jennifer L Armentrout</p>
+            <p>X $ARS</p>
+            <button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/La batalla cultural.jpg" alt="La batalla cultural">
+            <p>La batalla cultural</p>
+            <p>Agustin Laje</p>
+            <p>X $ARS</p>
+            <button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/La Espada de la Asesina.JPG" alt="La espada de la asesina">
+            <p>La espada de la asesina</p>
+            <p>Sarah J. Maas</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/Verity.jpg" alt="Verity">
+            <p>Verity</p>
+            <p>Colleen Hoover</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/The Love Hypothesis.jpg" alt="The Love Hypothesis">
+            <p>The Love Hypothesis</p>
+            <p>Ali Hazelwood</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/Where the Crawdads Sing.jpg" alt="Where the Crawdads Sing">
+            <p>Where the Crawdads Sing</p>
+            <p>Delia Owens</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/The Midnight Library.jpg" alt="The Midnight Library">
+            <p>The Midnight Library</p>
+            <p>Matt Haig</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/The Kiss Quotient.jpg" alt="The Kiss Quotient">
+            <p>The Kiss Quotient</p>
+            <p>Helen Hoang</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/The Song of Achilles.jpg" alt="The Song of Achilles">
+            <p>The Song of Achilles</p>
+            <p>Madeline Miller</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/Glucose Revolution.jpg" alt="Glucose Revolution">
+            <p>Glucose Revolution</p>
+            <p>Jessie Inchauspe</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/Manifest.jpg" alt="Manifest">
+            <p>Manifest</p>
+            <p>Roxie Nafousi</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+        <div class="libro">
+            <img src="../assets/img/Confess.jpg" alt="Confess">
+            <p>Confess</p>
+            <p>Colleen Hoover</p>
+            <p>X $ARS
+            </p><button type="button">Añadir al carrito</button>
+        </div>
+    </section>
+    <!-- Más Ejemplos-->
+    <aside class="aside-vendido">
+        <div class="aside-vendido-search">
+            <h2>Filtrar tu búsqueda</h2>
+            <div class="aside-content">
+                <form action="filter-menu">
+                    <div class="form-group">
+                        <label for="filter-palabra">Palabra clave</label>
+                        <input class="form-control palabra" type="text" name="searchTerm">
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-price">Precio</label>
+                        <select name="price" id="filter-price" class="form-control">
+                            <option value="" label="Todo"">Todo</option>
+                                                <option value=" low" label="Debajo 1000 $ARS">Debajo 1000 $ARS</option>
+                            <option value="med" label="1000 $ARS a 3000 $ARS">1000 $ARS a 3000 $ARS</option>
+                            <option value="high" label="> 3000 $ARS">>3000 $ARS</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-disponbiilidad">Disponibilidad</label>
+                        <select name="disponibilidad" id="filterDisponibilidad" class="form-control">
+                            <option value="" label="Todo">Todo</option>
+                            <option value="1" label="En stock">En stock</option>
+                            <option value="2" label="Pre-ordenar">Pre ordenar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-idioma">Idioma</label>
+                        <select name="idioma" id="filter-idioma" class="form-control">
+                            <option value="" label="Todo">Todo</option>
+                            <option value="1" label="Inglés">Inglés</option>
+                            <option value="2" label="Español">Español</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="filter-button" type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+    <footer class="main-footer">
+        <div class="footer-left-content">
+            <section class="footer-links">
+                <h3><b>¿En qúe podemos ayudarte?</b></h3>
+                <ul>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul> 
+            </section>
+        </div>
+        <div class="footer-right-content">
+           <div class="payment-methods">
+                <p>Aceptamos los siguientes métodos de pago</p>
+                <img src="../assets/img/payments methods.png" alt="Payment Methods">
+           </div>
+           <div class="small-print">
+               <p>© 2022  Bookify</p>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>
