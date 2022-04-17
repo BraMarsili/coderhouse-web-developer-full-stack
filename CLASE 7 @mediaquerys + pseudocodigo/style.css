@@ -1,0 +1,58 @@
+/* RESPONSIVE STANDAR */
+/* @mediaquery condición {
+    selector {
+        estilos
+     } 
+    }
+*/
+
+/* Estilos Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* RESPONSIVE standard */
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+    /* Estilos */
+}
+
+/* TABLET */
+
+@media (min-width: 577px) and (max-width: 991px){
+    /* Estilos */
+}
+
+
+/* SMARTPHONE */
+
+@media (max-width:576px) {
+    /* Estilos */
+}
+
+/*****************
+MOBILE FIRST 
+*****************/
+
+/* SMARTPHONE */
+
+@media (max-width:576px) {
+    /* Estilos */
+}
+
+/* TABLET */
+
+@media (min-width: 577px) and (max-width: 991px){
+    /* Estilos */
+}
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+    /* Estilos */
+}

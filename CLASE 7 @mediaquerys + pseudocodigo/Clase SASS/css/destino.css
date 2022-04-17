@@ -1,0 +1,57 @@
+/*Esto es un comentario de bloque de CSS puro*/
+/*ESTO ES UN FRAGMENTO Y DEBE IMPORTARSE AL ORIIGEN
+@import "fragmento";*/
+/*Los fragmentos tienen que ir con un _ adelante para que SASS identifique como un fragmento*/
+/* VARIABLE CSS PURO */
+:root {
+  --color-principal: black;
+}
+
+/*VARIABLE GLOBAL SASS*/
+/* SINTAXIS $nombre: color*/
+/*Anidamiento*/
+body {
+  width: 100%;
+  background-color: var(--color-principal);
+}
+body div {
+  background-color: green;
+  color: red;
+  border: 1px solid green;
+}
+body div ul {
+  list-style-type: disc;
+}
+body div ul li {
+  background-color: green;
+  padding: 20px;
+  border: 1px solid green;
+}
+body div ul li a {
+  text-decoration: none;
+}
+body div ul li a:hover {
+  background-color: green;
+}
+
+body {
+  width: 100%;
+}
+body .caja {
+  background-color: #fff;
+  color: red;
+  border: 1px solid pink;
+}
+body .caja .menu {
+  list-style-type: disc;
+}
+body .caja .menu .menu-item {
+  background-color: green;
+  padding: 20px;
+  border: 1px solid blue;
+}
+body .caja .menu .menu-item .enlace {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=destino.css.map */
